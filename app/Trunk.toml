@@ -1,0 +1,8 @@
+[build]
+dist = "../dist/"
+
+
+[[hooks]]
+stage = "build"
+command = "sh"
+command_arguments = ["-c", "tailwindcss -i style/tailwind.css -o $TRUNK_STAGING_DIR/tailwind.css"]
